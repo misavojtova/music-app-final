@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/music-app-final/static/css/main.e5d8373b.chunk.css",
+    "main.js": "/music-app-final/static/js/main.1500ac3f.chunk.js",
+    "main.js.map": "/music-app-final/static/js/main.1500ac3f.chunk.js.map",
+    "runtime-main.js": "/music-app-final/static/js/runtime-main.580ab039.js",
+    "runtime-main.js.map": "/music-app-final/static/js/runtime-main.580ab039.js.map",
+    "static/js/2.ed713171.chunk.js": "/music-app-final/static/js/2.ed713171.chunk.js",
+    "static/js/2.ed713171.chunk.js.map": "/music-app-final/static/js/2.ed713171.chunk.js.map",
+    "index.html": "/music-app-final/index.html",
+    "static/css/main.e5d8373b.chunk.css.map": "/music-app-final/static/css/main.e5d8373b.chunk.css.map",
+    "static/js/2.ed713171.chunk.js.LICENSE.txt": "/music-app-final/static/js/2.ed713171.chunk.js.LICENSE.txt",
+    "static/media/Better-Call-Saul.2843969a.jpeg": "/music-app-final/static/media/Better-Call-Saul.2843969a.jpeg",
+    "static/media/background_video.37b0c6c4.mp4": "/music-app-final/static/media/background_video.37b0c6c4.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.580ab039.js",
+    "static/js/2.ed713171.chunk.js",
+    "static/css/main.e5d8373b.chunk.css",
+    "static/js/main.1500ac3f.chunk.js"
+  ]
+}
