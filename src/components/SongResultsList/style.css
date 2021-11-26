@@ -1,0 +1,8 @@
+.song-holder {
+  max-height: 80%;
+  overflow: auto;
+  width: 100%;
+}
+.hide {
+  display: none;
+}

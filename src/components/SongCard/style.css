@@ -1,0 +1,7 @@
+@media screen and (min-width: 1000px) {
+  .song-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

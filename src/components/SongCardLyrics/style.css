@@ -1,0 +1,35 @@
+.lyrics-con {
+  white-space: pre-line;
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  background-color: rgb(0 0 0 / 83%);
+  width: 100%;
+}
+
+.close-lyr {
+  right: 0.8rem;
+  top: 0.8rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.text-wrap {
+  text-align: center;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 10;
+}
+.text {
+  padding: 2.2rem 0;
+  background-color: rgb(0 0 0 / 83%);
+}

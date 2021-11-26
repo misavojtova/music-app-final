@@ -1,0 +1,120 @@
+body {
+  background-color: black;
+}
+
+.song-image-container img {
+  width: 100%;
+  height: auto;
+}
+.songCardHeaderMain {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.song-card-header {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+.iconArrow {
+  align-self: flex-start;
+}
+
+.song-title {
+  color: white;
+  font-weight: lighter;
+}
+
+.song-artist {
+  color: white;
+  font-weight: lighter;
+}
+
+.material-icons {
+  color: white;
+}
+
+.song-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: space-between;
+}
+.glow-on-hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #c28b87;
+  margin: 5px;
+  border-radius: 25px;
+  padding: 7px 20px;
+}
+
+.audio-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.audio {
+  max-width: 320px;
+  width: 80vw;
+  border-radius: 25px;
+  border: 2px solid #c28b87;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(0, 0, 0);
+}
+audio::-webkit-media-controls-play-button {
+  background-color: #c28b87;
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-mute-button {
+  background-color: #c28b87;
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display {
+  color: white;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: white;
+}
+audio::-webkit-media-controls-timeline {
+  background-color: #c28b87;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+audio::-webkit-media-controls-volume-slider {
+  background-color: #c28b87;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.allSong-button {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 550px) {
+  .song-card-header {
+    width: 80%;
+    height: 660px;
+    border: 5px solid #c28b87;
+    border-radius: 30px;
+  }
+  .song-image-container img {
+    border-radius: 24px;
+  }
+}

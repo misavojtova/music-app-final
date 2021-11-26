@@ -1,0 +1,15 @@
+.song-result-card {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: white;
+  border-bottom: rgba(255, 255, 255, 0.212) solid 2px;
+}
+.song-result-info-holder {
+  margin-left: 15px;
+  font-weight: 300;
+}
+.song-result-title {
+  font-size: 24px;
+}

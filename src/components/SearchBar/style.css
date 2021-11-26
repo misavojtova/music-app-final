@@ -1,0 +1,24 @@
+.search-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0000001c;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 0.3rem 0.8rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+input.search-space {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  width: 80%;
+}
+input.search-space::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
