@@ -8,7 +8,7 @@ function Album({ albumId }) {
         className='album-frame'
         src={`https://widget.deezer.com/widget/dark/album/${albumId}?autoplay=false&radius=true&tracklist=true`}
         allowtransparency='true'
-        allowfullscreen='true'
+        allowFullScreen={true}
         allow='encrypted-media'
       ></iframe>
     </div>

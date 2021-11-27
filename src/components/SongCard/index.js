@@ -2,24 +2,31 @@ import SongCardHeader from "../SongCardHeader";
 import Album from "../Album";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import SongCardLyrics from "../SongCardLyrics";
 import "./style.css";
+import fetchJsonp from "fetch-jsonp";
+
 function SongCard() {
   let songId = useParams().id;
   const [showLyr, setShowLyr] = useState(false);
   let [loading, setLoading] = useState(true);
   let [songInfo, setSongInfo] = useState([]);
+
   function getAllSongInfo() {
     setLoading(true);
-    axios
-      .get(`https://api.deezer.com/track/${songId}`)
+    fetchJsonp(`https://api.deezer.com/track/${songId}&output=jsonp`)
       .then((resp) => {
-        setSongInfo(resp.data);
+        return resp.json();
+      })
+      .then((resp) => {
+        setSongInfo(resp);
         setLoading(false);
       })
-      .catch((err) => {});
+      .catch((err) => {
+        console.log(err);
+      });
   }
+
   useEffect(() => {
     getAllSongInfo();
     // eslint-disable-next-line react-hooks/exhaustive-deps

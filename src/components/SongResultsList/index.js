@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-
-import axios from "axios";
+import fetchJsonp from "fetch-jsonp";
 import SongResult from "../SongResult";
 
 import "./style.css";
@@ -8,17 +7,25 @@ import "./style.css";
 function SongResultList({ nameTyped }) {
   const [songResults, setSongResults] = useState([]);
   const [hidden, setHidden] = useState(true);
+  // require("es6-promise").polyfill();
 
   function fetchApi() {
     if (nameTyped === "") {
       setSongResults([]);
       setHidden(true);
     } else {
-      const apiUrl = `https://api.deezer.com/search/track/autocomplete?limit=15&q=${nameTyped}`;
-      axios.get(apiUrl).then((response) => {
-        setSongResults(response.data.data);
-        setHidden(false);
-      });
+      const apiUrl = `https://api.deezer.com/search/track/autocomplete?limit=15&q=${nameTyped}&output=jsonp`;
+
+      fetchJsonp(apiUrl)
+        .then((response) => {
+          return response.json();
+        })
+        .then((response) => {
+          console.log(response);
+          setSongResults(response.data);
+          setHidden(false);
+        })
+        .catch((err) => console.log(err));
     }
   }
 
